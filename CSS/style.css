@@ -86,7 +86,7 @@ header {
 
 /* estilos section sobre nos */
 
-.main--about {
+.sc--about {
     margin: 6em 17em;
     display: flex;
     flex-direction: column;
@@ -109,5 +109,39 @@ header {
     text-align: center;
     color: var(--medium-gray);
     font-size: 1.25rem;
+    line-height: 1.5em;
+}
+
+/* estilos metricas e resultados */
+
+.sc--results {
+    display: flex;
+    justify-content: center;
+    margin: 0 5em;
+}
+
+.results__card {
+    padding: 1em;
+    width: 17rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.results__card-number {
+    color: var(--maroon);
+    font-size: 3.75rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.results__card-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+.results__card-description {
+    color: var(--medium-gray);
+    align-self: stretch;
     line-height: 1.5em;
 }
