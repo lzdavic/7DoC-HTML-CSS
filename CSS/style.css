@@ -29,6 +29,8 @@ html {
     background-color: var(--white);
 }
 
+/* estilizaçao do cabeçalho */
+
 header {
     display: flex;
     height: 5rem;
@@ -80,4 +82,32 @@ header {
     text-decoration: none;
     color: var(--white);
     border-radius: 0.5em;
+}
+
+/* estilos section sobre nos */
+
+.main--about {
+    margin: 6em 17em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading {
+    color: var(--maroon);
+    font-weight: 600;
+}
+
+.about__title {
+    color: var(--Blueish-black);
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 2.5rem 0;
+}
+
+.about__content {
+    text-align: center;
+    color: var(--medium-gray);
+    font-size: 1.25rem;
+    line-height: 1.5em;
 }
