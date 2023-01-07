@@ -20,7 +20,7 @@
     --medium-gray: hsl(220, 13%, 46%);
     --gray: hsl(220, 15%, 27%);
     --maroon: hsl(0, 59%, 35%);
-    --translucid-red: hsla(0, 77%, 43%, 3%);
+    --translucid-maroon: hsla(0, 59%, 35%, 5%);
 }
 
 html {
@@ -87,7 +87,7 @@ header {
 /* estilos section sobre nos */
 
 .sc--about {
-    margin: 6em 17em;
+    margin: 6em auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,6 +110,7 @@ header {
     color: var(--medium-gray);
     font-size: 1.25rem;
     line-height: 1.5em;
+    width: 49rem;
 }
 
 /* estilos metricas e resultados */
@@ -117,7 +118,7 @@ header {
 .sc--results {
     display: flex;
     justify-content: center;
-    margin: 0 5em;
+    margin: 0 5em 6em 5em;
 }
 
 .results__card {
@@ -144,4 +145,34 @@ header {
     color: var(--medium-gray);
     align-self: stretch;
     line-height: 1.5em;
+}
+
+/* estilos do banner */
+
+.main__banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6em;
+}
+
+.banner__ad {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--maroon);
+    background-color: var(--translucid-maroon);
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+}
+
+.banner__heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding: 1.5rem;
+}
+
+.banner__paragraph {
+    font-size: 1.25rem;
+    color: var(--medium-gray);
+    margin-bottom: 4rem;
 }
