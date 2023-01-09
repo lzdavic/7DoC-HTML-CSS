@@ -15,12 +15,17 @@
 :root {
     --white: hsl(0, 0%, 99%);
     --Blueish-black: hsl(23, 43%, 11%);
-    --very-light-gray: hsl(210, 24%, 98%);
+    --very-light-gray: hsl(200, 17%, 93%);
     --light-gray: hsl(218, 15%, 65%);
     --medium-gray: hsl(220, 13%, 46%);
     --gray: hsl(220, 15%, 27%);
     --maroon: hsl(0, 59%, 35%);
     --translucid-maroon: hsla(0, 59%, 35%, 5%);
+    --footer-BG: hsl(210, 24%, 98%);
+}
+
+* {
+    transition: 300ms;
 }
 
 html {
@@ -53,6 +58,7 @@ header {
     font-size: 1.125rem;
     text-decoration: none;
     font-weight: 500;
+    color: var(--Blueish-black);
 }
 
 .header--nav {
@@ -175,4 +181,150 @@ header {
     font-size: 1.25rem;
     color: var(--medium-gray);
     margin-bottom: 4rem;
+}
+
+/* estilo secao vagas */
+
+.main__jobs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.jobs--wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 48rem;
+}
+
+.jobs__category {
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.job--container {
+    border: 1px solid var(--very-light-gray);
+    border-radius: 0.5em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.job__title {
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.job__time-salary {
+    display: flex;
+    gap: 3em;
+    color: var(--medium-gray);
+}
+
+/* estilos secao testemunhos */
+
+.sc--testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem;
+    margin: 6rem;
+    background-color: var(--translucid-maroon);
+    gap: 1rem;
+}
+
+.testimony__heading {
+    color: var(--maroon);
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.testimony__quotation {
+    font-size: 2.25rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.testimony__avatar {
+    margin-top: 1em;
+}
+
+.testimony__name {
+    font-weight: 500;
+}
+
+.testimony__cargo {
+    font-size: 0.875rem;
+    color: var(--light-gray);
+}
+
+/* rodapé */
+
+footer {
+    background-color: var(--footer-BG);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer__heading {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.footer__paragraph {
+    font-size: 1.25rem;
+    color: var(--gray);
+}
+
+.footer--email-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.footer__input {
+    padding: 1em;
+    border-radius: 0.5em;
+    border: 1px solid var(--very-light-gray);
+    width: 21rem;
+}
+
+.footer__button {
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    background-color: var(--maroon);
+    border: none;
+    border-radius: 0.5em;
+}
+
+.footer__copyright {
+    color: var(--light-gray);
+    padding: 0.5em;
+}
+
+/* hover estilos */
+
+.banner__image:hover,
+.testimony__avatar:hover {
+    filter: brightness(1.5);
+    filter: saturate(0.5);
+    transform: scale(0.98)
+}
+
+.footer__button:hover,
+.login__sign-in:hover,
+.login__sign-up:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav__link:hover {
+    color: var(--Blueish-black);
+    font-weight: 600;
 }
