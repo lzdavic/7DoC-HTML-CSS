@@ -1,4 +1,5 @@
 <h1 align="center">7 Days of Code - HTML & CSS</h1>
+<h3 align="center">#7DaysOfCode</h3>
 
 ## Desafio do site [7daysofcode.io](https://7daysofcode.io)
 ### O desafio é desenvolver uma pagina estática com HTML e CSS com base em um projeto do Figma.
